@@ -1,0 +1,10 @@
+User-Agent: *
+Disallow: 
+Allow: /videos
+Allow: /images
+Allow: /private
+Allow: /old-stuf
+Allow: /clocknsc
+Allow: /css
+
+Sitemap: http://neriumskin.com/sitemap.xml

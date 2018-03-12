@@ -1,0 +1,110 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-color: #f2f2f2;
+}
+a {
+	-moz-user-select: none;
+	color: #1155CC !important;
+	font-family: "verdana", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h3 {
+	margin:0;
+	padding:10px 5px 10px 5px;
+}
+#Frame0 {
+	background-color: #F7F7F7;
+	margin: 30px auto auto;
+	padding: 10px;
+	width: 750px;
+	border: 1px solid #EEE;
+}
+.a1 {
+	display: block;
+    
+    margin: 0 0 2em 0;
+    max-width: 80%;
+   margin-left: auto;
+  margin-right: auto;
+   
+  height: auto;
+}
+
+.a12 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width:auto;
+}
+.b1{
+    display: block;
+    max-width: 20%;
+}
+
+
+.Button3 {
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	display: inline-block;
+	font-size: 11px;
+	font-weight: 700;
+	line-height: 23px;
+	margin-right: 2px;
+	min-width: 40px;
+	padding: 0 16px;
+	text-align: center;
+	-moz-user-select: none;
+	color: #FFFFFF;
+	
+	background:#CF0A2C;
+/*	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.2, #A1D2E6), color-stop(1, #A1D2E6));
+	background:-moz-linear-gradient(center top, #6dbd45 20%, #51a326 100%); */
+	border:0;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	padding: 3px 10px;
+	text-align:center;
+	overflow:hidden;
+	min-width:70px;
+}
+.Button1:hover {
+	text-decoration: none;
+}
+.button3:active {
+	background:#A1D2E6;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.2, #A1D2E6), color-stop(1, #A1D2E6));
+	background:-moz-linear-gradient(center top, #5EA534 20%, #519327 100%);
+}
+.Button3:active, .a:active {
+	position: relative;
+	top: 1px;
+}
+.Input {
+	background-color: #FFFFFF;
+	border-color: #A0A0A0 #B9B9B9 #B9B9B9;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+	font-size: 11px;
+	margin: 0;
+	padding: 5px;
+	width: 200px;
+}
+.Table {
+	font-family: verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-color: #E4E4E4;
+}
+.Table td {
+	background-color: #F8F8F8;
+}
