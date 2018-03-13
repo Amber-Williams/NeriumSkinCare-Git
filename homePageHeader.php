@@ -48,7 +48,7 @@
 <div class="row">
 
     <div class="col-xs-6 companyLogo">
-        <a href="http://neriumskincare.com"><img src="images/newlogo.gif" width="250" alt="company logo" class="img-responsive"></a>
+        <a href="#"><img src="images/newlogo.gif" width="250" alt="company logo" class="img-responsive"></a>
     </div>
 
     <div class="col-xs-6">    
@@ -72,8 +72,6 @@
         <li><a href="clinical/">Clinical</a></li>
         <li><a href="Products/">Products</a></li>
         <li><a href="ingredients/">Ingredients</a></li>
-        <li><a href="news/">News</a></li>
-       <!-- <li><a href="blog/">Blog</a></li>  -->      
         <li><a href="international/">International</a></li>                       
     </ul>
 </nav>

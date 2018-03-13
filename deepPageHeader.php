@@ -64,7 +64,7 @@
 <div id="nav-container">
 <nav>
     <ul>
-    <li><a href="../">Home</a>
+    <li><a href="../index.php">Home</a>
        
     </li>
     <li><a href="../about/">About</a>
@@ -76,8 +76,6 @@
         <li><a href="../clinical/">Clinical</a></li>
         <li><a href="../Products/">Products</a></li>
         <li><a href="../ingredients/">Ingredients</a></li>
-        <li><a href="../news/">News</a></li>
-       <!-- <li><a href="../blog/">Blog</a></li> -->       
         <li><a href="../international/">International</a></li>    
     </ul>
 </nav>
