@@ -1,52 +1,91 @@
-    <!-- real results -->
-    <?php include('../deepPageHeader.php'); ?>
+<?php include('../deepPageHeader.php'); ?>
 
 <style>
-hr.nae {
-  padding: 0;
-  border: none;
-  border-top: 1px solid #808080;
-  color: #808080;
-  text-align: center;
-}
+    .grid-wrapper {
+        display: grid;
+    }
+    @media only screen and (min-width:734px) {
+          .grid-wrapper {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 50%;
+            grid-column-gap: 3%;
+            /* Dev note: grid row below only works across browsers if defined in px's instead of % */
+            grid-row-gap:20px;
+          }
 
+    }
+    @media only screen and (min-width: 470px) and (max-width: 735px) {
+        .grid-wrapper {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 50%;
+            grid-column-gap: 3%;
+            /* Dev note: grid row below only works across browsers if defined in px's instead of % */
+            grid-row-gap:20px;
+        }
+    }
+    @media only screen and (max-width: 470px) {
+        .grid-wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: 20%;
+            /* Dev note: grid row below only works across browsers if defined in px's instead of % */
+            grid-row-gap:20px;
+        }
+    }
 
+    .box-front,
+    .box-back {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 200px;
+        max-height: 200px;
+        min-width: 100%;
+        max-width: 250px;
+    }
+    .box-front {
+        border: 1px solid #e2e2e2;
+        background: white;
+        flex-flow: column;
+    }
+    .box-front img {
+        margin:5px;
+    }
+    .box-back {
+        border: 1px solid #e2e2e2;
+        background: white;
+        font-size: .8em;
+        padding:10px;
+        text-align: justify;
+    }
 
-hr.nae:after {
-  content: "Nerium oleander & Aloe Extract";
-  display: inline-block;
-  position: relative;
-  top: -0.7em;
-  font-size: 1em;
-  font-weight: bold;
-  padding: 0 0.75em;
-  background: white;
-}
-    hr.Dimethicone {
-  padding: 0;
-  border: none;
-  border-top: 1px solid #808080;
-  color: #808080;
-  text-align: center;
-}
-
-
-
-hr.Dimethicone:after {
-  content: "Dimethicone";
-  display: inline-block;
-  position: relative;
-  top: -0.7em;
-  font-size: 1em;
-  font-weight: bold;
-  padding: 0 0.75em;
-  background: white;
-}
-
-ul.bulletList li a {
-  text-decoration: underline;
-}
-
+    .ingredients-grid-text {
+        color: #47322e;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        font-weight: normal;
+        line-height: 27px;
+        text-align: center;
+    }
+    .box-front span{
+        border-bottom: 1px solid #47322e;
+    }
+    .hoverable {
+        cursor:default;
+        color:#000;
+        text-decoration:none;
+        }
+    .hoverable .hover {
+        display:none;
+        }
+    .hoverable:hover .normal {
+        display:none;
+        }
+    .hoverable:hover .hover {
+        display:grid;
+        }
+    a:hover {
+        text-decoration:  none;
+    }
 </style>
 
 
@@ -57,87 +96,302 @@ ul.bulletList li a {
                 </div>
             </div>	
         </div>	
-
+        
         <div class="row">
-            <div class="col-xs-12">
-                <div class="responsive-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/B2D17SuWInY" frameborder="0" allowfullscreen></iframe>
-                </div>
+            <div class="col-sm-12">
+                <div class="grid-wrapper">
 
-
-
-                <hr class="nae">
-                 <img src="../images/heroes/nae8.png" width=26% height=150 class="demo2">
-                <p> This Patented extract (NAE-8&circledR; and NAE-14&circledR;(NAE-8<sub>i</sub>)) is derived through a proprietary process resulting in the skin industries' most unique and revolutionary ingredient; Nerium oleander and Aloe extract. NAE-8&circledR; is our original domestic formulation of Nerium oleander and Aloe extract, while NAE-14&circledR;(NAE-8<sub>i</sub>) is our international formulation.
-               Studies has shown the ability to produce immune activation in human cells especially those that are related to and important for the health and well-being of skin tissues.</p>
-                <br/> 
-                <img src="../images/heroes/nae-14.png" width=200 height=150 class="demo">
-
-
-                <ul class="bulletList">
-                <li><a href="../images/Immunomodulatory properties of NAE-14 and WSEM.pdf" target="_blank">Immune activating properties of an Aloe vera-based extract of Nerium oleander leaves are enhanced by hydrolyzed water-soluble egg membrane.</a></li>
-                    <li>Targets not just the signs of aging but also the underlying cause.</li>
-                    <li>Delivers powerful antioxidants to target free radical damage.</li>
-                    <li>Boosts the skin rejuvenating process to reveal younger-looking skin.</li>
+                    <div class="box1">
+                        <a href="#" class="hoverable">
+                            <span class="normal ingredients-grid-text">
+                                <div class="box-front">
+                                    <span>Nerium oleander</span>
+                                    <img src="neriumoleander.jpg" alt="Nerium Oleander" width="70%"/>
+                                </div>
+                            </span>
+                            
+                            <span class="hover">
+                                <div class="box-back">
+                                    <p>Targets not just the signs of aging but also the underlying cause. Delivers powerful antioxidants to target free radical damage. Boosts the skin rejuvenating process to reveal younger-looking skin. Research has shown that NAE-14® possesses potent antioxidant and anti-inflammatory properties, while also inducing specific cytokines in dermal fibroblasts of relevance to wound healing.</p>
+                                </div>
+                            </span>
+                        </a>
+                    </div>
                     
-                    <li>Research has shown that NAE-14<span>&circledR;</span> possesses potent antioxidant and anti-inflammatory properties, while also inducing specific cytokines in dermal fibroblasts of relevance to wound healing.</li>
-                    <li>The combination of NAE-14® added to WSEM also produced enhancement of the innate immune system. The combination also led to very large increases in such important chemokines as GRO-α, GRO-β and fractalkine.
-                    </li>
-                </ul>
+                    <div class="box2">
+                        <a href="#" class="hoverable">
+                            <span class="normal ingredients-grid-text">
+                                <div class="box-front">
+                                    <span>BiovaDerm</span>
+                                    <img src="../images/heroes/biova.jpg" alt="BiovaDerm" width="50%"/>
+                                </div>
+                            </span>
+                            
+                            <span class="hover">
+                                <div class="box-back">
+                                    <p>This advanced technology process retains the natural ratios of key elements found in nature’s potent life source of proteins and peptides from water soluble egg membrane (WSEM) that are beneficial to skin. These peptides include collagen, elastin, desmosine, isodesmosine and glycosaminoglycans (GAGs). </p>
+                                </div>
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="box3">
+                        <a href="#" class="hoverable">
+                            <span class="normal ingredients-grid-text">
+                                <div class="box-front">
+                                    <span>Parsley Basil</span>
+                                    <img src="basil.jpg" alt="Parsley Basil" width="50%"/>
+                                </div>
+                            </span>
+                            
+                            <span class="hover">
+                                <div class="box-back">
+                                    <p>When basil and parsley are extracted and combined in the correct way it creates a unique synergy, which is extremely efficacious on the skin.</p>
+                                </div>
+                            </span>
+                        </a>
+                    </div>
 
-                <hr class="biova">
+                    <div class="box4">
+                        <a href="#" class="hoverable">
+                            <span class="normal ingredients-grid-text">
+                                <div class="box-front">
+                                    <span>Zinc Oxide</span>
+                                    <img src="zincoxide.png" alt="Zinc Oxide" width="50%"/>
+                                </div>
+                            </span>
+                            
+                            <span class="hover">
+                                <div class="box-back">
+                                    <p>This popular ingredient is used primary to shield and protect the skin from UVB, UVA II and UVA I rays, as it is considered as one of the safest to use sun-protecting ingredient on the market. Zinc oxide is also used to be a soothing agent and an antioxidant.</p>
+                                </div>
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="box5">
+                        <a href="#" class="hoverable">
+                            <span class="normal ingredients-grid-text">
+                                <div class="box-front">
+                                    <span>Dimethicone</span>
+                                    <img src="dimethicone.png" alt="Dimethicone" width="60%"/>
+                                </div>
+                            </span>
+                            
+                            <span class="hover">
+                                <div class="box-back">
+                                    <p>One of the most commonly found skin care ingredient is a silicon-based polymer used to condition the skin while protecting the skin, working to prevent water loss by forming a hydrating barrier on the skin. Fills in wrinkles and lines on the face to give it a temporary plumped appearance.</p>
+                                </div>
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="box6">
+                        <a href="#" class="hoverable">
+                            <span class="normal ingredients-grid-text">
+                                <div class="box-front">
+                                    <span>Hyaluronic Acid </span>
 
-                <p>This advanced technology process retains the natural ratios of key elements found in nature’s potent life source of proteins and peptides from water soluble egg membrane (WSEM) that are beneficial to skin. These peptides include collagen, elastin, desmosine, isodesmosine and glycosaminoglycans (GAGs). BiovaDerm® is processed through an all natural OvaPure™ mechanical process. The ability of WSEM to stimulate specific genes associated with a transcription activation factor known Nrf-2 which, in turn, activates Antioxidant Response Elements (AREs; genes associated with antioxidant activity) was assessed as well as the ability of human primary dermal fibroblasts to produce matrix components collagen and elastin.</p>
+                                    <img src="hyaluronicacid.png" alt="Hyaluronic Acid" width="70%"/>                                
+                                </div>
+                            </span>
+                            
+                            <span class="hover">
+                                <div class="box-back">
+                                    <p>Powerful skin moisturizer</p>
+                                </div>
+                            </span>
+                        </a>
+                    </div>
 
-                <img src="../images/heroes/biova.jpg" width=200 height=150 class="demo">
+                    <div class="box7">
+                        <a href="#" class="hoverable">
+                            <span class="normal ingredients-grid-text">
+                                <div class="box-front">
+                                    <span>Aloe Vera</span>
+                                    <img src="Aloe.png" alt="Aloe Vera" width="50%"/>                               
+                                 </div>
+                            </span>
+                            
+                            <span class="hover">
+                                <div class="box-back">
+                                    <p>Antioxidant and antibacterial properties</p>
+                                </div>
+                            </span>
+                        </a>
+                    </div>
 
-                <ul class="bulletList">
-                    <li>Treatment of facial skin in this clinical study resulted in a significant reduction in wrinkles around the eye (so-called “crow’s feet”).</li>
-                    <li>WSEM triggered up-regulation of Antioxidant Response Elements (AREs) which are associated with enhanced antioxidant responses. Associated with this was a significant reduction in reactive oxygen species (free radicals).</li>
-                    <li>Human dermal fibroblasts treated with WSEM in vitro showed a robust increase in the production of hyaluronan, collagen and elastin all of which are important elements associated with improved skin hydration and function and, in turn, are important for as reduction of facial wrinkles. In fact, WSEM increased hyaluronan (hyaluronic acid) production by up to 25-fold which is critical for improved skin hydration.</li>
-                    <li>The results suggest that the complex Peptide-Matrix in hydrolyzed egg membrane holds promise in support of skin health, especially in protection from free radical induced damage to skin tissue. The effects were seen on three different cell types that are interconnected in the process of age-related wrinkle formation: dermal fibroblasts, dermal keratinocytes and polymorphonuclear cells from the blood circulation. </li>
-                </ul>
+                    <div class="box8">
+                        <a href="#" class="hoverable">
+                            <span class="normal ingredients-grid-text">
+                                <div class="box-front">
+                                    <span>Niacinamide </span>
+                                    <img src="niacinamide.png" alt="Niacinamide" width="70%"/>                               
+                                 </div>
+                            </span>
+                            
+                            <span class="hover">
+                                <div class="box-back">
+                                    <p>Vitamin B3</p>
+                                </div>
+                            </span>
+                        </a>
+                    </div>
 
-                
+                    <div class="box9">
+                        <a href="#" class="hoverable">
+                            <span class="normal ingredients-grid-text">
+                                <div class="box-front">
+                                    <span>Superoxide Dismutase</span>
+                                    <img src="superoxidedismutase.png" alt="Superoxide Dismutase" width="50%"/>                                
+                                </div>
+                            </span>
+                            
+                            <span class="hover">
+                                <div class="box-back">
+                                    <p>Antioxidant Enzyme</p>
+                                </div>
+                            </span>
+                        </a>
+                    </div>
 
-                  <hr class="pb">
+                    <div class="box10">
+                        <a href="#" class="hoverable">
+                            <span class="normal ingredients-grid-text">
+                                <div class="box-front">
+                                    <span>Camphor</span>
 
-                <p>When basil and parsley are extracted and combined in the correct way it creates a unique synergy (called PB 8), which is extremely efficacious on the skin. This is what RexCure has discovered, allowing us to take advantage of the potency of the herbs in a completely new way. RexCure uses nothing but fresh, 100% organic herbs of high quality from Danish organic nurseries.</p>
-                
-                <img src="../images/heroes/parsley.png" width=200 height=150 class="demo">
+                                    <img src="camphor.png" alt="Camphor" width="70%"/>                                
+                                </div>
+                            </span>
+                            
+                            <span class="hover">
+                                <div class="box-back">
+                                    <p>Works upon application to relieve pain</p> 
+                                </div>
+                            </span>
+                        </a>
+                    </div>
 
-                  <ul class="bulletList">
+                    <div class="box11">
+                        <a href="#" class="hoverable">
+                            <span class="normal ingredients-grid-text">
+                                <div class="box-front">
+                                    <span>Menthol</span>
 
-         <li>Basilikos is Greek meaning ‘royal’ or the king of herbs. It is believed that in ancient times basil was an ingredient in the special oil used to anoint new kings</li>
-        <li>Parsley comes from the Mediterranean area and the Romans cultivated the plant for medicinal use. Parsley has long been known as a remedy against lice and for its soothing effect on swelling and itching. </li>
-        <li>Helps prevent the signs of aging</li>
-        <li>Reinforces the skin’s natural barrier</li>
-        <li>Antioxidant and antibacterial</li>
-                    </ul>
-                
-                
-            <hr class="Zinc">
-                
-<p>This popular ingredient is used primary to shield and protect the skin from UVB, UVA II and UVA I rays, as it is considered as one of the safest to use sun-protecting ingredient on the market.</p>
-                
-<ul class="bulletList">
-<li>Zinc oxide is also used to be a soothing agent and an antioxidant.</li>
-<li>The Zinc oxide in our products are not nano-sized, even though it is not believed to be a safety concern for skin.</li>
-<li>Zinc oxide is known to help skin conditions such as rosacea, acne and melasma due to its anti-inflammatory properties.</li>
-<li>Zinc oxide has the ability to act as a protective layer on the skin to lock moisture in, all the while keeping pathogens out.</li>
-</ul> 
-                
-<hr class="Dimethicone">
-    
-<p>One of the most commonly found skin care ingredient is a silicon-based polymer used to condition the skin while protecting the skin, working to prevent water loss by forming a hydrating barrier on the skin.</p>
-    
-<ul class="bulletList">
-<li>Silky to the touch.</li>
-<li>Fills in wrinkles and lines on the face to give it a temporary plumped appearance.</li>
-<li>Keeps the skin adequately moisturized even during the driest winter weather. </li>
+                                    <img src="menthol.jpg" alt="Menthol" width="40%"/>                                
+                                </div>
+                            </span>
+                            
+                            <span class="hover">
+                                <div class="box-back">
+                                    <p>Topical Analgesic</p>
+                                </div>
+                            </span>
+                        </a>
+                    </div>
 
-</ul>
+                    <div class="box12">
+                        <a href="#" class="hoverable">
+                            <span class="normal ingredients-grid-text">
+                                <div class="box-front">
+                                    <span>Allantoin</span>
+                                    <img src="placeholder-3.jpg" alt="Allantoin" width="50%"/>                                
+                                </div>
+                            </span>
+                            
+                            <span class="hover">
+                                <div class="box-back">
+                                    <p>Works to protect the skin from environmental stressors and bacteria</p>
+                                </div>
+                            </span>
+                        </a>
+                    </div>
 
+                    <div class="box13">
+                        <a href="#" class="hoverable">
+                            <span class="normal ingredients-grid-text">
+                                <div class="box-front">
+                                    <span>Salicylic Acid</span>
+                                    <img src="placeholder-2.jpg" alt="Salicylic Acid" width="50%"/>                                
+                                </div>
+                            </span>
+                            
+                            <span class="hover">
+                                <div class="box-back">
+                                    <p>May work by helping the skin to shed dead cells from the top layer and by decreasing redness and swelling (inflammation). In addition, may help decrease the apperance of pimples that form and speeds healing.</p>
+                                </div>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="box14">
+                        <a href="#" class="hoverable">
+                            <span class="normal ingredients-grid-text">
+                                <div class="box-front">
+                                    <span>Green Tea</span>
+                                    <img src="greentea.jpg" alt="Green Tea" width="50%"/>                                
+                                </div>
+                            </span>
+                            
+                            <span class="hover">
+                                <div class="box-back">
+                                    <p>Green tea has been shown to be the most effective agent against skin inflammation</p>
+                                </div>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="box15">
+                        <a href="#" class="hoverable">
+                            <span class="normal ingredients-grid-text">
+                                <div class="box-front">
+                                    <span>Collidal Oatmeal</span>
+                                    <img src="oatmeal.jpg" alt="Collidal Oatmeal" width="70%"/>                                
+                                </div>
+                            </span>
+                            
+                            <span class="hover">
+                                <div class="box-back">Works to smooth and comfort skin that is itchy and dry</div>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="box16">
+                        <a href="#" class="hoverable">
+                            <span class="normal ingredients-grid-text">
+                                <div class="box-front">
+                                    <span>Coconut Extract</span>
+                                    <img src="coconut.jpg" alt="Coconut Extract" width="50%"/>                                
+                                </div>
+                            </span>
+                            
+                            <span class="hover">
+                                <div class="box-back">
+                                    <p>Delivers non-irritating moisturizing and conditioning benefits effectively to the skin</p>
+                                </div>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="box17">
+                        <a href="#" class="hoverable">
+                            <span class="normal ingredients-grid-text">
+                                <div class="box-front">
+                                    <span>Caffeine</span>
+                                    <img src="caffeine.jpg" alt="Caffeine" width="70%"/>                                
+                                </div>
+                            </span>
+                            
+                            <span class="hover">
+                                <div class="box-back">
+                                    <p>Antioxidant</p>
+                                </div>
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div> 
 
