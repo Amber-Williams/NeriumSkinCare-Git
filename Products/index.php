@@ -1,27 +1,16 @@
 <?php include('../deepPageHeader.php'); ?>
 <style>
-    <style>
-
-body {font-family: "Lato", sans-serif;}
-
-.abc{
-text-decoration:"underline";
-}
 
 ul.tab {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-   }
-
-
+}
 ul.tab li {
     float:left;
     
-    }
-
-
+}
 ul.tab li a {
     display: inline-block;
     color: black;
@@ -31,15 +20,6 @@ ul.tab li a {
     transition: 0.3s;
     font-size: 17px;
 }
-
-
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-   
-    border-top: none;
-}
-
 hr.development {
   padding: 0;
   border: none;
@@ -57,7 +37,6 @@ hr.development:after {
   padding: 0 0.75em;
   background: white;
 }
-
 hr.productinfo {
   padding: 0;
   border: none;
@@ -71,20 +50,9 @@ hr.productinfo:after {
   position: relative;
   top: -0.7em;
   font-size: 1em;
-  
   padding: 0 0.75em;
   background: white;
 }
-    span.new{
-        color:blue;
-        font-size:9px;
-    }
-    
-    span.click{
-        color:crimson;
-        font-size: 9px;
-    }
-
 </style>
 	<div class="row">
 		<div class="col-sm-12">
@@ -122,8 +90,6 @@ hr.productinfo:after {
                 <h4>Products will be launched soon:</h4>
                 <br/>
                     <ul class="bulletList">
-                     <a href="http://www.neriumskincare.com/NeriumADAdvanced"><li>NeriumAD&trade; ADVANCED Products &nbsp;<span class="new">NEW!&nbsp;</span><span class="click">Click Here</span> </li> </a>
-                     <a href="../rx_1products/index.php"><li>NeriumRX&trade; Products&nbsp;<span class="new">NEW!&nbsp;</span><span class="click">Click Here</span></li></a>
                         <li>Psoriasis Treatment</li>
                         <li>Cold Sore and Lip Maintenance Therapy</li>
                         <li>Shingles Therapy</li>
@@ -135,25 +101,17 @@ hr.productinfo:after {
                         <li>Foot Treatment Cream</li>
                         <li>Scar Therapy</li>
                         <li>Hand Treatment Cream</li>
-                        <li>Licensed Professional’s &amp; Private Label Healthcare Product Lines </li>
-                            <ul> 
-                                <li>&nbsp;&nbsp;&nbsp;Professional Night Treatment Cream</li>
-                                <li>&nbsp;&nbsp;&nbsp;Professional Day Moisturising &amp; Sun Protection Cream</li>
-                                <li>&nbsp;&nbsp;&nbsp;Professional Body Contouring Cellulite Treatment Cream</li>
-                                <li>&nbsp;&nbsp;&nbsp;Professional Brightening Cream</li>
-                            </ul>
                     </ul>
 
-			<hr class="currentDistribution">
+		<hr class="currentDistribution">
 
-			<p>Product distribution of NeriumAD<sup><span class="rSymbol">&circledR;</span></sup> Age-Defying Day Cream, NeriumAD<sup><span class="rSymbol">&circledR;</span></sup> Age-Defying Night Cream, and NeriumAD<sup><span class="rSymbol">&circledR;</span></sup> Age-Defying Firming Body Contour Cream is provided for through a licensing agreement between Nerium Skincare, Inc. and Nerium International, LLC.</p>
+		<p>Product distribution of NeriumAD<sup><span class="rSymbol">&circledR;</span></sup> Age-Defying Day Cream, NeriumAD<sup><span class="rSymbol">&circledR;</span></sup> Age-Defying Night Cream, and NeriumAD<sup><span class="rSymbol">&circledR;</span></sup> Age-Defying Firming Body Contour Cream is provided for through a licensing agreement between Nerium Skincare, Inc. and Nerium International, LLC.</p>
 
-			<!--<hr class="internationalCompliance">-->
+		<!--<hr class="internationalCompliance">-->
 
-			<p>Nerium SkinCare’s current product line is approved for distribution in:</p>
+		<p>Nerium SkinCare’s current product line is approved for distribution in:</p>
 
 		 <ul class="bulletList">
-       
             <li> United States </li>
             <li> Honduras/El Salvador/Nicaragua - August 2014</li>
             <li> Hong Kong - October 2014</li>
@@ -168,14 +126,10 @@ hr.productinfo:after {
             <li> Russia - July 2015</li>
             <li> Turkey - August 2015</li>
             <li> European Union - May 2015</li>
- 
-</ul>
-
-			<p>Regulatory approval is underway in additional countries.</p>
-
-			<hr class="newTechnology">
-
-            <p>Nerium SkinCare uses a new patented technology NBio-PL²<sup><span class="rSymbol">&trade;</span></sup> for its skin care products. This patented technology incorporates pure liquid <i>Aloe Vera</i> as the medium to extract and react with the unique <i>Nerium oleander</i> plant components in a way that preserves the unique and beneficial properties of both plants. The result of this technology is a new ingredient NAE-8<sup><span class="rSymbol">&circledR;</span></sup>.</p>
+        </ul>
+		<p>Regulatory approval is underway in additional countries.</p>
+		<hr class="newTechnology">
+        <p>Nerium SkinCare uses a new patented technology NBio-PL²<sup><span class="rSymbol">&trade;</span></sup> for its skin care products. This patented technology incorporates pure liquid <i>Aloe Vera</i> as the medium to extract and react with the unique <i>Nerium oleander</i> plant components in a way that preserves the unique and beneficial properties of both plants. The result of this technology is a new ingredient NAE-8<sup><span class="rSymbol">&circledR;</span></sup>.</p>
 
 
     
