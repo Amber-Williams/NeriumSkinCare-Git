@@ -64,12 +64,8 @@
 <div id="nav-container">
 <nav>
     <ul>
-    <li><a href="../index.php">Home</a>
-       
-    </li>
-    <li><a href="../about/">About</a>
-      
-        </li>
+        <li><a href="../index.php">Home</a></li>
+        <li><a href="../about/">About</a></li>
         <li><a href="../corescience">Core Science</a></li>  
         <li><a href="../realresults/">Real Results</a></li>
         <li><a href="../advancement/">Advancement</a></li>
