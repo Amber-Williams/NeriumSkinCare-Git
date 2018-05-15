@@ -12,35 +12,20 @@
   <link rel="stylesheet" href="../css/master.css">
   <link rel="stylesheet" href="../css/styles.css">
   <link href="../assets/docs.css" rel="stylesheet"> 
-<link rel="stylesheet" href="../css/flag-icon.min.css">   
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src='https://www.google.com/recaptcha/api.js'></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <link rel="stylesheet" href="../css/flag-icon.min.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> 
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-79255479-1', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-79255479-1', 'auto');
+    ga('send', 'pageview');
 
-</script>
-<style>
-  .fa {
-  padding: 5px;
-  font-size: 27px;
-  text-decoration: none;
-  display: inline;  
-   color: #BFBFBF;
-    
-}
-
-.fa:hover {
-    opacity: 0.5;
-}
-  
-  
-</style>
+    </script>
 
 </head>
 <body>
