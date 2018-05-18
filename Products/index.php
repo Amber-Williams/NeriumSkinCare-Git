@@ -1,58 +1,5 @@
 <?php include('../deepPageHeader.php'); ?>
-<style>
-    ul.tab {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-    ul.tab li {
-        float:left;
-        
-    }
-    ul.tab li a {
-        display: inline-block;
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        transition: 0.3s;
-        font-size: 17px;
-    }
-    hr.development {
-    padding: 0;
-    border: none;
-    border-top: 1px solid #808080;
-    color: #808080;
-    text-align: center;
-    }
-    hr.development:after {
-    content: "New Products in Development";
-    display: inline-block;
-    position: relative;
-    top: -0.7em;
-    font-size: 1em;
-    font-weight: bold;
-    padding: 0 0.75em;
-    background: white;
-    }
-    hr.productinfo {
-    padding: 0;
-    border: none;
-    border-top: 1px solid #808080;
-    color: #808080;
-    text-align: center;
-    }
-    hr.productinfo:after {
-    content: "Click On Products for more Details";
-    display: inline-block;
-    position: relative;
-    top: -0.7em;
-    font-size: 1em;
-    padding: 0 0.75em;
-    background: white;
-    }
-</style>
+
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="banner">
@@ -85,7 +32,7 @@
 	<div class="row">
 		<div class="col-sm-12">
         <h1 class="sub-h1">Our Product Lines</h1>
-			<a class="collection-a" href="AdvancedLine">
+			<a class="collection-a" href="../advanced">
 				<div class="banner products-ADVANCED sub-margin">
 					<h1 class="collection-h1" >NERIUM ADVANCED</h1>
 					<h3 class="collection-h3">THE BEAUTY OF SCIENCE</h3>
@@ -97,7 +44,7 @@
 	</div>	
     <div class="row">
 		<div class="col-sm-12">
-			<a class="collection-a" href="TherapyLine">
+			<a class="collection-a" href="../therapy">
 				<div class="banner products-RX sub-margin">
 					<h1 class="collection-h1">NERIUMRX THERAPY</h1>
 					<h3 class="collection-h3">SKIN HEALTH</h3>

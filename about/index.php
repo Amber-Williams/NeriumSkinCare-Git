@@ -231,7 +231,7 @@
               <a class="accordion-section-title" href="#accordion-6">Management<span class="arrow"></span></a>
                 <div id="accordion-6" class="accordion-section-content">
                 <img src="../images/headshots1/knockeD.jpg" alt="Dennis R. Knocke" />
-                <h4 class="space-below">Dennis R. Knocke, Chief Executive Officer and Chairman of the Board of Directors</h4>  
+                <h4 class="space-below">Dennis R. Knocke, Chief Executive Officer <!--and Chairman of the Board of Directors--></h4>  
                 <p>Mr. Knocke attended Sam Houston State University in Huntsville, Texas. He has successfully founded and operated several start-up 
                 healthcare companies that were acquired by national and international business entities listed on the New York and London stock exchanges. Mr. Knocke was
                 previously President of Bexar Credentials Verification, Inc., a start-up software technology company whose principals included the Bexar County Medical 
@@ -442,7 +442,7 @@
     
     <span class="management-content">
     <img src="../images/headshots1/knockeD.jpg" alt="Dennis R. Knocke" />
-    <h4 class="space-below">Dennis R. Knocke, Chief Executive Officer and Chairman of the Board of Directors</h4>  
+    <h4 class="space-below">Dennis R. Knocke, Chief Executive Officer <!--and Chairman of the Board of Directors--></h4>  
     <p>Mr. Knocke attended Sam Houston State University in Huntsville, Texas. He has successfully founded and operated several start-up 
     healthcare companies that were acquired by national and international business entities listed on the New York and London stock exchanges. Mr. Knocke was
      previously President of Bexar Credentials Verification, Inc., a start-up software technology company whose principals included the Bexar County Medical 
