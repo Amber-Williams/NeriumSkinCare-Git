@@ -92,7 +92,7 @@
 
         </div>
     </div>
- <!-- About-SubMenu widget made by Amber Williams using Flexbox and JavaScript -->
+
   <div class="row submenu-mobile">
     <div class="col-xs-12">
       <style>
@@ -356,7 +356,6 @@
     <div class="col-xs-12">
 
       <div class="about-menu" >
-        <!--TTD: make it grey when people are on that sub-page...a signifier-->
         <button class="about-menu-choices initial-active-about-menu-choice" id="quality">Quality</button>
         <button class="about-menu-choices" id="history">History</button>
         <button class="about-menu-choices" id="nerium-farms">Nerium Farms</button>
